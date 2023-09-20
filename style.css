@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white:hsl(0,0%,100%);
+    --Light_Grey:hsl(217,12%,63%);
+    --Orange:hsl(25,97%,53%);
+    --Medium_Grey:#262f38;
+    --Dark_Blue:#212832;
+    --Very_Dark_Blue:hsl(216,12%,8%)
+}
+ body{
+    background-color: var(--Very_Dark_Blue);
+    font-family: sans-serif;
+    color: var(--white);
+ }
+ /*comun*/
+  .container{
+    width: 370px;
+    margin:100px auto;
+    padding:25px;
+    border-radius: 20px;
+    background-color: var(--Dark_Blue);
+ }
+
+ /*rating state*/
+ .star{
+    margin-bottom: 20px;
+    padding:14px;
+    width: 45px;
+    height: 45px;
+    background-color:var(--Medium_Grey);
+    border-radius: 50%;  
+ }
+ .heading{
+    color: var(--white);
+    font-size: 1.5em;
+    font-weight: 300;
+ }
+ .paragraph{
+    margin: 25px auto;
+    color:var(--Light_Grey);
+    font-size: 0.9em;
+    font-weight: 400;
+    
+ }
+ .container_number{
+   text-align: center;
+   display: flex;
+   justify-content: space-around;
+ }
+ .number{
+   color: var(--white);
+   background-color: var(--Medium_Grey);
+   border-radius: 50%;
+   width:45px;
+   height: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: center;  
+ }
+ .number:hover,.points{  
+   cursor: pointer;
+   background-color: var(--Orange); 
+ }
+ .submit{
+   border: transparent;
+   border-radius: 26px;
+   background-color: var(--Orange);
+   color: var(--white);
+   font-weight:700;
+   margin: 15px;
+   height: 50px;
+   width:280px ;
+ }
+ .submit:hover{
+   background-color: var(--white);
+   color: var(--Orange);
+   cursor: pointer;
+ }
+ /*thank you state*/
+ .check{
+ text-align: center;
+ }
+ .selection{
+   margin: 20px auto;
+   text-align: center;
+   background-color: var(--Medium_Grey);
+   color: var(--Orange);
+   font-size: 0.7em;
+   border-radius: 16px;
+   padding: 5px;
+   width: 150px;
+ }
+ h4{
+   text-align: center;
+ }
+ .thanks_paragraph{
+   color: var(--Light_Grey);
+   font-size: 0.9em;
+   margin: 20px 0;
+ }
+
+ footer{
+   text-align: center;
+   padding: 35px;
+ }
+
+ .hidden_section{
+   display:none;
+ }
+ 
